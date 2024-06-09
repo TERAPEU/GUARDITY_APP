@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul"
+    tools:context=".ScreenLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:background="@drawable/guardity_sesion"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aldrich"
+            android:text="GAURDITY"
+            android:textAlignment="center"
+            android:textColor="@color/celeste"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inder"
+            android:text="SEGURIDAD DE LOCALIZACION"
+            android:textAlignment="center"
+            android:textColor="@color/celeste" />
+    </LinearLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyCardView"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="16dp"
+            android:gravity="center_horizontal">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="BIENVENIDO"
+               android:textColor="@color/azul"
+               android:textSize="32sp"
+               android:textStyle="bold"
+               android:textAlignment="center"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textAlignment="center"
+               android:text="Inicia Sesión para continuar"
+               android:textColor="@color/azul"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Nombre de usuario o correo electrónico"
+               android:textColor="@color/azul"
+               android:textSize="16sp"
+               android:paddingTop="20dp"/>
+           <EditText
+               android:id="@+id/nombre_usuario"
+               android:layout_width="match_parent"
+               android:layout_height="45dp"
+               android:drawableStart="@drawable/icon_usuario"
+               android:paddingStart="10dp"
+               android:hint="@string/usuario_o_correo"
+               android:textSize="15sp"
+               android:background="@drawable/border_edittex"
+               tools:ignore="RtlSymmetry" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                android:textColor="@color/azul"
+                android:textSize="16sp"
+                android:paddingTop="20dp"/>
+            <EditText
+                android:id="@+id/Contraseña"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableStart="@drawable/icon_contrase"
+                android:paddingStart="10dp"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textSize="15sp"
+                android:background="@drawable/border_edittex"
+                tools:ignore="RtlSymmetry"
+                android:drawableEnd="@drawable/ver_contrase"
+                android:paddingEnd="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Recordarme"
+                    android:textAlignment="viewStart"/>
+                <TextView
+                    android:layout_width="210dp"
+                    android:layout_height="match_parent"
+                    android:text="¿Olvidaste tu contraseña?"
+                    android:textColor="@color/azul"
+                    android:textAlignment="textEnd"
+                    />
+
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACCEDER"
+                android:textSize="18sp"
+                app:cornerRadius="10dp"
+                android:backgroundTint="@color/azul"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="¿No tienes cuenta?"
+                android:textColor="@color/azul"
+                android:textSize="16sp"
+                android:paddingTop="20dp"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTRARSE"
+                android:textColor="@color/celeste"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+
+
+       </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
