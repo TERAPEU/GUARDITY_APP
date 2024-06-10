@@ -8,4 +8,12 @@
     <color name="celeste">#00ffff</color>
     <color name="transparent">#00FFFFFF</color>
     <color name="gris">#8F8E8E</color>
+
+
+
+    <color name="colorNormal">#FF0000</color> <!-- Rojo -->
+    <color name="colorActivated">#00FF00</color> <!-- Verde -->
+    <color name="colorHighlight">#0000FF</color> <!-- Azul -->
+
+
 </resources>

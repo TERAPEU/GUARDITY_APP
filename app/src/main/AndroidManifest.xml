@@ -14,7 +14,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".ScreenLogin"
+            android:name=".ScreenRegister"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,9 +23,12 @@
         </activity>
 
         <activity
+            android:name=".ScreenLogin"
+            android:exported="true" />
+
+        <activity
             android:name=".ScreenStart"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -44,6 +44,7 @@
         android:layout_height="wrap_content"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyCardView"
         android:gravity="center"
+        app:strokeColor="@color/white"
         android:layout_alignParentBottom="true">
 
         <LinearLayout
@@ -120,6 +121,8 @@
                     android:text="¿Olvidaste tu contraseña?"
                     android:textColor="@color/azul"
                     android:textAlignment="textEnd"
+                    android:clickable="true"
+                    android:focusable="true"
                     />
 
             </LinearLayout>
@@ -147,7 +150,6 @@
                 android:textStyle="bold"
                 android:padding="10dp"
                 android:textAlignment="center"
-                android:background="?attr/selectableItemBackground"
                 android:clickable="true"
                 android:focusable="true"/>
             <View
