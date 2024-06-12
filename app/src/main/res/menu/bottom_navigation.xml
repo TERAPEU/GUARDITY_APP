@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/firstFragment"
+        android:icon="@drawable/home"
+        android:title="Inicio"/>
+    <item
+        android:id="@+id/secondFragment"
+        android:icon="@drawable/locate"
+        android:title="Ubicaciones"/>
+    <item
+        android:id="@+id/thirdFragment"
+        android:icon="@drawable/noti"
+        android:title="Notificaciones"/>
+    <item
+        android:id="@+id/fourthFragment"
+        android:icon="@drawable/suport"
+        android:title="Soporte"/>
+    <item
+        android:id="@+id/fifthFragment"
+        android:icon="@drawable/configur"
+        android:title="Configuracion"/>
+</menu>

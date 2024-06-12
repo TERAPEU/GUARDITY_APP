@@ -15,5 +15,10 @@
     <color name="colorActivated">#00FF00</color> <!-- Verde -->
     <color name="colorHighlight">#0000FF</color> <!-- Azul -->
 
+    /*colores degradados*/
+    <color name="color1">#1acbcd</color>
+    <color name="color2">#98dcdd</color>
+    <color name="color3">#f1f1f1</color>
+
 
 </resources>

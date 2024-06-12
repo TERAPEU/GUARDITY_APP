@@ -43,7 +43,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="16dp"
             android:gravity="center_horizontal">
 
             <TextView
@@ -72,7 +71,7 @@
                     android:textAlignment="center"
                     android:text="INICIAR SESIÓN"
                     android:textColor="@color/celeste"
-                    android:textSize="16sp"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:clickable="true"
                     android:focusable="true"/>
@@ -173,7 +172,8 @@
                 tools:ignore="RtlSymmetry" />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="match_parent"
+                android:id="@+id/btn_registrar"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="REGISTRAR"
                 android:textColor="@color/azul"

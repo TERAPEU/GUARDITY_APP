@@ -9,6 +9,11 @@
         <item name="android:fitsSystemWindows">false</item>
 
     </style>
+    <style name="BottomNavigation">
+        <item name="background">@color/azul</item>
+        <item name="itemIconTint">@color/white</item>
+        <item name="itemTextColor">@color/white</item>
+    </style>
 
     <style name="Theme.Guadity_APP" parent="Base.Theme.Guadity_APP" />
 </resources>
