@@ -91,15 +91,25 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="210dp" />
+            android:layout_height="250dp"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="bottom|end"
+                android:backgroundTint="@color/celeste"
+                android:src="@drawable/mensaje_ic"
+                android:id="@+id/contacto"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="ContentDescription" />
+
+
     </LinearLayout>
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:backgroundTint="@color/celeste"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"/>
+
+
 
 </FrameLayout>
 
