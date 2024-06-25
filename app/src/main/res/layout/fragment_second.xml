@@ -2,14 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/white"
     tools:context=".SecondFragment">
-
-
-
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/map"
@@ -57,12 +53,45 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         app:layout_constraintBottom_toBottomOf="@+id/map"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="0dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="@color/gris">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Mi ubicación" />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="20dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/baseline_assignment_24"
+                    app:backgroundTint="@color/transparent"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/baseline_assignment_24"
+                    app:backgroundTint="@color/transparent"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <EditText
@@ -97,6 +126,5 @@
         app:layout_constraintStart_toEndOf="@+id/editTextText"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.092" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
