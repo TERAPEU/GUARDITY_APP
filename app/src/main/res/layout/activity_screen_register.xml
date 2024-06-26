@@ -14,6 +14,7 @@
         android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/btn_atras"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
@@ -66,6 +67,7 @@
                     android:text="¿Ya tienes cuenta?"
                     android:textColor="@color/celeste" />
                 <TextView
+                    android:id="@+id/btn_iniciar_sesion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"

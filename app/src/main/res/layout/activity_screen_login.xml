@@ -80,7 +80,7 @@
                android:id="@+id/nombre_usuario"
                android:layout_width="match_parent"
                android:layout_height="45dp"
-               android:drawableStart="@drawable/icon_usuario"
+               android:drawableStart="@drawable/ic_usuario"
                android:paddingStart="10dp"
                android:hint="@string/usuario_o_correo"
                android:textSize="15sp"
@@ -142,6 +142,7 @@
                 android:paddingTop="20dp"
                 android:textAlignment="center" />
             <TextView
+                android:id="@+id/registro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="REGISTRARSE"
