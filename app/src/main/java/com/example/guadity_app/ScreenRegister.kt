@@ -28,9 +28,10 @@ class ScreenRegister : AppCompatActivity() {
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 val builder = AlertDialog.Builder(this@ScreenRegister)
-                builder.setMessage("¿Seguro que quieres regresar a Inicio?")
+                builder.setMessage("¿Seguro que quieres Regresar a Inicio?")
                     .setCancelable(false)
                     .setPositiveButton("Aceptar") { dialog, id ->
+                        startActivity(Intent(this@ScreenRegister, ScreenLogin::class.java))
                         finish()
                     }
                     .setNegativeButton("Cancelar") { dialog, id ->
@@ -46,7 +47,7 @@ class ScreenRegister : AppCompatActivity() {
         val inicio: TextView = findViewById(R.id.btn_iniciar_sesion)
 
         button.setOnClickListener {
-            val intent = Intent(this, ScreenPrincipal::class.java)
+            val intent = Intent(this, ScreenLogin::class.java)
             startActivity(intent)
         }
 

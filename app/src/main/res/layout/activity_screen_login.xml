@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/aldrich"
-            android:text="GAURDITY"
+            android:text="GUARDITY"
             android:textAlignment="center"
             android:textColor="@color/celeste"
             android:textSize="30sp" />
@@ -127,6 +127,7 @@
 
             </LinearLayout>
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_iniciar_sesion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="ACCEDER"
