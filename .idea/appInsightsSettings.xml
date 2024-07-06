@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.guadity_app" />
+                  <option name="mobileSdkAppId" value="1:126318853530:android:2f3eb318c81c5f47cece23" />
+                  <option name="projectId" value="guadityapp" />
+                  <option name="projectNumber" value="126318853530" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

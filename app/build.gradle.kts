@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.google.android.libraries.mapsplatform.secrets.gradle.plugin)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -10,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.guadity_app"
-        minSdk = 21
+        minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -47,4 +48,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
+    implementation(platform(libs.firebase.bom.v3231))
+    implementation(libs.firebase.auth.ktx)
+    implementation(platform(libs.firebase.bom.v3280))
+    implementation(libs.firebase.firestore)
+
 }

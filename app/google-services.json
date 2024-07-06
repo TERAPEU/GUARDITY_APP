@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "126318853530",
+    "project_id": "guadityapp",
+    "storage_bucket": "guadityapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126318853530:android:2f3eb318c81c5f47cece23",
+        "android_client_info": {
+          "package_name": "com.example.guadity_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwTYi_0UODrR9uCEFcH-f4FY_FfuIQKGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

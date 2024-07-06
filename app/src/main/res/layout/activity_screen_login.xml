@@ -51,7 +51,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:orientation="vertical"
-           android:padding="16dp"
+           android:padding="10dp"
             android:gravity="center_horizontal">
 
            <TextView
@@ -79,11 +79,12 @@
            <EditText
                android:id="@+id/nombre_usuario"
                android:layout_width="match_parent"
-               android:layout_height="45dp"
+               android:layout_height="48dp"
                android:drawableStart="@drawable/ic_usuario"
                android:paddingStart="10dp"
                android:hint="@string/usuario_o_correo"
                android:textSize="15sp"
+               android:textColor="@color/black"
                android:background="@drawable/border_edittex"
                tools:ignore="RtlSymmetry" />
             <TextView
@@ -93,19 +94,21 @@
                 android:textColor="@color/azul"
                 android:textSize="16sp"
                 android:paddingTop="20dp"/>
-            <EditText
-                android:id="@+id/Contraseña"
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Contrasena"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:drawableStart="@drawable/icon_contrase"
-                android:paddingStart="10dp"
-                android:hint="Contraseña"
-                android:inputType="textPassword"
-                android:textSize="15sp"
+                android:layout_height="48dp"
                 android:background="@drawable/border_edittex"
-                tools:ignore="RtlSymmetry"
+                android:drawableStart="@drawable/icon_contrase"
                 android:drawableEnd="@drawable/ver_contrase"
-                android:paddingEnd="10dp"/>
+                android:hint="@string/contrase_a"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -129,7 +132,7 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_iniciar_sesion"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:text="ACCEDER"
                 android:textSize="18sp"
                 app:cornerRadius="10dp"
@@ -145,10 +148,10 @@
             <TextView
                 android:id="@+id/registro"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:text="REGISTRARSE"
                 android:textColor="@color/celeste"
-                android:textSize="16sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:padding="10dp"
                 android:textAlignment="center"
@@ -156,7 +159,7 @@
                 android:focusable="true"/>
             <View
                 android:layout_width="match_parent"
-                android:layout_height="80dp"/>
+                android:layout_height="70dp"/>
 
 
        </LinearLayout>
