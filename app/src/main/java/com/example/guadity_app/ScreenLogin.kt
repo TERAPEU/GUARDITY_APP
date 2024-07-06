@@ -58,8 +58,8 @@ class ScreenLogin : AppCompatActivity() {
         }
         val button: MaterialButton = findViewById(R.id.btn_iniciar_sesion)
         button.setOnClickListener {
-            val email = findViewById<EditText>(R.id.nombre_usuario).text.toString()
-            val password = findViewById<EditText>(R.id.Contrasena).text.toString()
+            val email = findViewById<EditText>(R.id.nombre_usuario).text.toString().trim()
+            val password = findViewById<EditText>(R.id.Contrasena).text.toString().trim()
             if (email.isEmpty() || password.isEmpty()) {
                 Toast.makeText(this, "Los campos no pueden estar vacios", Toast.LENGTH_SHORT).show()
             }
