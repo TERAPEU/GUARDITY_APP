@@ -114,15 +114,19 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <CheckBox
+                    android:id="@+id/recordarme"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Recordarme"
                     android:textAlignment="viewStart"/>
                 <TextView
+                    android:id="@+id/olvide_contrasena"
                     android:layout_width="210dp"
                     android:layout_height="match_parent"
                     android:text="¿Olvidaste tu contraseña?"
                     android:textColor="@color/azul"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
                     android:textAlignment="textEnd"
                     android:clickable="true"
                     android:focusable="true"

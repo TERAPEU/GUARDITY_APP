@@ -35,6 +35,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures{
+        viewBinding=true
+    }
 }
 
 dependencies {
@@ -54,5 +57,5 @@ dependencies {
     implementation(libs.firebase.auth.ktx)
     implementation(platform(libs.firebase.bom.v3280))
     implementation(libs.firebase.firestore)
-
+    implementation(libs.motiontoast)
 }

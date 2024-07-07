@@ -28,17 +28,35 @@
                 android:background="@drawable/icon_usuario"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="40dp"/>
-            <TextView
-                android:id="@+id/nombre_usuario"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="Nombre del usuario"
-                android:textSize="20sp"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:padding="10dp"
-                android:layout_marginTop="40dp"
-                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/nombre_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Nombre del usuario"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/correo_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Correo del usuario"
+                    android:textSize="12sp"
+                    android:textColor="@color/gris"
+                    android:gravity="center"
+                    android:textStyle="italic"/>
+
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/plan_usuario"
                 android:layout_width="wrap_content"
@@ -48,8 +66,8 @@
                 android:textColor="@color/celeste"
                 android:gravity="center"
                 android:textStyle="italic"
-                android:layout_marginStart="70dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
                 android:background="@drawable/borde_plan" />
         </LinearLayout>
 
@@ -68,7 +86,7 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/ver_todos"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="48dp"
                 android:text="Ver todos"
                 android:layout_marginStart="10dp"
                 android:textColor="@color/azul"
@@ -100,7 +118,7 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
                         <ImageView
-                            android:id="@+id/img_dispositivo"
+                            android:id="@+id/img_dispositivo_1"
                             android:layout_width="70dp"
                             android:layout_height="140dp"
                             android:layout_marginTop="15dp"
@@ -114,7 +132,7 @@
                             android:orientation="vertical"
                             android:layout_marginStart="10dp">
                             <TextView
-                                android:id="@+id/Nombre_dispositivo"
+                                android:id="@+id/Nombre_dispositivo_1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="SAMSUNG GALAXY A55 5G"
@@ -130,7 +148,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Modelo:"/>
                                 <TextView
-                                    android:id="@+id/Modelo_dispositivo"
+                                    android:id="@+id/Modelo_dispositivo_1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Samsung A55 5G"/>
@@ -144,7 +162,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Pais:"/>
                                 <TextView
-                                    android:id="@+id/Pais_Ubicacion"
+                                    android:id="@+id/Pais_Ubicacion_1"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Peru,PE(PER)"/>
@@ -172,7 +190,7 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
                         <ImageView
-                            android:id="@+id/img_dispositivo"
+                            android:id="@+id/img_dispositivo_2"
                             android:layout_width="70dp"
                             android:layout_height="140dp"
                             android:layout_marginTop="15dp"
@@ -186,7 +204,7 @@
                             android:orientation="vertical"
                             android:layout_marginStart="10dp">
                             <TextView
-                                android:id="@+id/Nombre_dispositivo"
+                                android:id="@+id/Nombre_dispositivo_2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="SAMSUNG GALAXY A55 5G"
@@ -202,7 +220,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Modelo:"/>
                                 <TextView
-                                    android:id="@+id/Modelo_dispositivo"
+                                    android:id="@+id/Modelo_dispositivo_2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Samsung A55 5G"/>
@@ -216,7 +234,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Pais:"/>
                                 <TextView
-                                    android:id="@+id/Pais_Ubicacion"
+                                    android:id="@+id/Pais_Ubicacion_2"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Peru,PE(PER)"/>
@@ -244,7 +262,7 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
                         <ImageView
-                            android:id="@+id/img_dispositivo"
+                            android:id="@+id/img_dispositivo_3"
                             android:layout_width="70dp"
                             android:layout_height="140dp"
                             android:layout_marginTop="15dp"
@@ -258,7 +276,7 @@
                             android:orientation="vertical"
                             android:layout_marginStart="10dp">
                             <TextView
-                                android:id="@+id/Nombre_dispositivo"
+                                android:id="@+id/Nombre_dispositivo_3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="SAMSUNG GALAXY A55 5G"
@@ -274,7 +292,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Modelo:"/>
                                 <TextView
-                                    android:id="@+id/Modelo_dispositivo"
+                                    android:id="@+id/Modelo_dispositivo_3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Samsung A55 5G"/>
@@ -288,7 +306,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Pais:"/>
                                 <TextView
-                                    android:id="@+id/Pais_Ubicacion"
+                                    android:id="@+id/Pais_Ubicacion_3"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Peru,PE(PER)"/>
@@ -315,7 +333,7 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
                         <ImageView
-                            android:id="@+id/img_dispositivo"
+                            android:id="@+id/img_dispositivo_4"
                             android:layout_width="70dp"
                             android:layout_height="140dp"
                             android:layout_marginTop="15dp"
@@ -329,7 +347,7 @@
                             android:orientation="vertical"
                             android:layout_marginStart="10dp">
                             <TextView
-                                android:id="@+id/Nombre_dispositivo"
+                                android:id="@+id/Nombre_dispositivo_4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="SAMSUNG GALAXY A55 5G"
@@ -345,7 +363,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Modelo:"/>
                                 <TextView
-                                    android:id="@+id/Modelo_dispositivo"
+                                    android:id="@+id/Modelo_dispositivo_4"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Samsung A55 5G"/>
@@ -359,7 +377,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Pais:"/>
                                 <TextView
-                                    android:id="@+id/Pais_Ubicacion"
+                                    android:id="@+id/Pais_Ubicacion_4"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Peru,PE(PER)"/>

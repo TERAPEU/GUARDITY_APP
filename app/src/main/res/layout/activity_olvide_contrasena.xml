@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul"
+    tools:context=".ScreenLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="40dp">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:background="@drawable/guardity_sesion"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aldrich"
+            android:text="GUARDITY"
+            android:textAlignment="center"
+            android:textColor="@color/celeste"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inder"
+            android:text="SEGURIDAD DE LOCALIZACION"
+            android:textAlignment="center"
+            android:textColor="@color/celeste" />
+    </LinearLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:strokeColor="@color/white"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reestablecer Contraseña"
+                android:textColor="@color/azul"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingresa tu Correo Electrónico registrado para restablecer tu contraseña"
+                android:textColor="@color/azul"
+                android:textSize="16sp"
+                android:paddingTop="20dp"/>
+            <EditText
+                android:id="@+id/correo_recuperar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableStart="@drawable/correo"
+                android:paddingStart="10dp"
+                android:hint="Correo"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:background="@drawable/border_edittex"
+                tools:ignore="RtlSymmetry" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_recuperar"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:text="RESTABLECER"
+                android:textSize="18sp"
+                android:textColor="@color/celeste"
+                app:cornerRadius="10dp"
+                android:backgroundTint="@color/azul"
+                android:elevation="10dp"
+                app:elevation="10dp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
