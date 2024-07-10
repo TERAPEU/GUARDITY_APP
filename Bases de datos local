@@ -1,0 +1,21 @@
+-- tables
+-- Table: login
+CREATE TABLE login (
+    id integer NOT NULL CONSTRAINT login_pk PRIMARY KEY AUTOINCREMENT,
+    usuario varchar(50) NOT NULL,
+    correo varchar(100) NOT NULL,
+    contrasenia varchar(16) NOT NULL,
+    Nusuario varchar(250) NOT NULL
+);
+
+-- Table: ubicacion
+CREATE TABLE ubicacion (
+    id integer NOT NULL CONSTRAINT ubicacion_pk PRIMARY KEY AUTOINCREMENT,
+    codigo_equipo varchar(256) NOT NULL,
+    latitud varchar(36) NOT NULL,
+    longitud varchar(36) NOT NULL,
+    d_ubicacion datetime NOT NULL
+);
+
+-- End of file.
+
