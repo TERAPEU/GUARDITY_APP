@@ -1,0 +1,83 @@
+-- tables
+-- Table: departamento
+CREATE TABLE departamento (
+    id int  NOT NULL IDENTITY,
+    Ndepartamento nvarchar(100)  NOT NULL,
+    CONSTRAINT departamento_pk PRIMARY KEY  (id)
+);
+
+-- Table: distrito
+CREATE TABLE distrito (
+    id int  NOT NULL IDENTITY,
+    Ndistrito nvarchar(100)  NOT NULL,
+    provincia_id int  NOT NULL,
+    CONSTRAINT distrito_pk PRIMARY KEY  (id)
+);
+
+-- Table: equipo
+CREATE TABLE equipo (
+    id int  NOT NULL IDENTITY,
+    codigo_equipo nvarchar(256)  NOT NULL,
+    numero nvarchar(9)  NOT NULL,
+    login_id int  NOT NULL,
+    CONSTRAINT equipo_pk PRIMARY KEY  (id)
+);
+
+-- Table: login
+CREATE TABLE login (
+    id int  NOT NULL IDENTITY,
+    usuario nvarchar(50)  NOT NULL,
+    correo nvarchar(100)  NOT NULL,
+    contrasenia nvarchar(16)  NOT NULL,
+    Nusuario nvarchar(250)  NOT NULL,
+    CONSTRAINT login_pk PRIMARY KEY  (id)
+);
+
+-- Table: provincia
+CREATE TABLE provincia (
+    id int  NOT NULL IDENTITY,
+    Nprovincia nvarchar(100)  NOT NULL,
+    departamento_id int  NOT NULL,
+    CONSTRAINT provincia_pk PRIMARY KEY  (id)
+);
+
+-- Table: ubicacion
+CREATE TABLE ubicacion (
+    id int  NOT NULL,
+    equipo_id int  NOT NULL,
+    latitud nvarchar(36)  NOT NULL,
+    longitud nvarchar(36)  NOT NULL,
+    distrito_id int  NULL,
+    d_ubicacion datetime  NOT NULL,
+    d_registro datetime  NOT NULL,
+    CONSTRAINT ubicacion_pk PRIMARY KEY  (id)
+);
+
+-- foreign keys
+-- Reference: distrito_provincia (table: distrito)
+ALTER TABLE distrito ADD CONSTRAINT distrito_provincia
+    FOREIGN KEY (provincia_id)
+    REFERENCES provincia (id);
+
+-- Reference: equipos_login (table: equipo)
+ALTER TABLE equipo ADD CONSTRAINT equipos_login
+    FOREIGN KEY (login_id)
+    REFERENCES login (id);
+
+-- Reference: provincia_departamento (table: provincia)
+ALTER TABLE provincia ADD CONSTRAINT provincia_departamento
+    FOREIGN KEY (departamento_id)
+    REFERENCES departamento (id);
+
+-- Reference: ubicacion_distrito (table: ubicacion)
+ALTER TABLE ubicacion ADD CONSTRAINT ubicacion_distrito
+    FOREIGN KEY (distrito_id)
+    REFERENCES distrito (id);
+
+-- Reference: ubicacion_equipo (table: ubicacion)
+ALTER TABLE ubicacion ADD CONSTRAINT ubicacion_equipo
+    FOREIGN KEY (equipo_id)
+    REFERENCES equipo (id);
+
+-- End of file.
+
